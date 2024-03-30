@@ -751,7 +751,9 @@ main {
 
 .clients-item img {
   width: 100%;
-  filter: grayscale(1);
+  filter: blur(6px);
+  filter: drop-shadow(0px 0px 6px rgba(190, 166, 29, 0.5));
+  /* filter: grayscale(1); */
   transition: var(--transition-1);
 }
 
