@@ -757,6 +757,10 @@ main {
   transition: var(--transition-1);
 }
 
+.clients-item img:hover {
+  height:100px;
+  }
+
 .clients-item img:hover { filter: grayscale(0); }
 
 
