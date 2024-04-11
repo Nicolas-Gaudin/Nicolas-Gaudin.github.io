@@ -221,6 +221,7 @@
         </section>
 
 
+
         <section class="skill">
           <div class="title-wrapper">
             <div class="icon-box">
@@ -235,16 +236,33 @@
 
               <div class="title-wrapper">
                 <h5 class="h5"><i class="fa-solid fa-spinner fa-spin-pulse"></i> writing <i class="fa-solid fa-spinner fa-spin-pulse"></i></h5>
-                <data value="1">1%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 1%;"></div>
+                <div class="skill-progress-fill"  id="skill-progress-fill"></div>
               </div>
 
             </li>
           </ul>
         </section>
+
+        <script>
+          // Define the start and end dates
+          var startDate = new Date('2024-04-01');
+          var endDate = new Date('2024-09-01');
+        
+          // Get today's date
+          var today = new Date();
+        
+          // Calculate the percentage completion
+          var totalDays = Math.ceil(endDate - startDate);
+          var daysPassed = Math.ceil(today - startDate);
+          var percentage = (daysPassed / totalDays) * 100;
+        
+          // Update the width of the skill-progress-fill element
+          document.getElementById('skill-progress-fill').style.width = percentage + '%';
+        </script>
+        
         <p><br><br></p>
 
         <section class="timeline">
