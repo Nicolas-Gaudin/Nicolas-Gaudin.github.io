@@ -170,6 +170,7 @@
 
       </nav>
 
+      
 
       
 
@@ -204,7 +205,41 @@
               <p class="timeline-text">
                 Moritz Peters, Nicolas Gaudin, Jan Philipp Thoma, Vianney Lapôtre, Pascal Cotret, Guy Gogniat, Tim Güneysu
                 <br>
-                <u><a target="_blank" href="https://arxiv.org/pdf/2312.06235.pdf"><i class="fa-solid fa-file-pdf"></i> Link to paper</a></u>
+                <t style="color:gray">Singapore, July 2024</t> 
+                <div class="container_u">
+                  <div class="column_u">
+                    <div>
+                      <u style="color: var(--light-gray); text-decoration-color: var(--light-gray);">
+                        <a target="_blank" href="https://arxiv.org/pdf/2312.06235.pdf">
+                          <i class="fa-solid fa-file-pdf"  style="margin-right: 5px;"></i>Link to paper
+                        </a>
+                      </u>
+                    </div>
+                  </div>
+                  <div class="column_u">
+                    <div>
+                      <a target="_blank" href="">
+                        <span style="display: inline-flex; align-items: center;">
+                          <img src="assets/my/acm.svg" height="30" style="margin-right: 5px;"></img> 
+                          <u style="color: var(--light-gray); text-decoration-color: var(--light-gray);">
+                            <span style="color: var(--light-gray); font-weight: var(--fw-300); line-height: 1.6;">
+                              Link to paper
+                            </span>
+                          </u>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- <u>
+                  <a target="_blank" href="https://arxiv.org/pdf/2312.06235.pdf">
+                    <i class="fa-solid fa-file-pdf" style="margin-right: 5px;"></i>Link to paper
+                  </a>
+                  <a target="_blank" href="https://arxiv.org/pdf/2312.06235.pdf">
+                    <img src="assets/my/acm.svg" height="30" style="margin-right: 5px;"></img> Link to paper
+                  </a>
+                </u> -->
+                
               </p>
             </li>
             
@@ -214,9 +249,35 @@
               <p class="timeline-text">
                 Nicolas Gaudin, Jean-Loup Hatchikian-Houdot, Frédéric Besson, Pascal Cotret, Guy Gogniat, Guillaume Hiet, Vianney Lapôtre, Pierre Wilke
                 <br>
-                <u><a target="_blank" href="https://hal.science/hal-04155139/document/"><i class="fa-solid fa-file-pdf"></i> Link to paper</a></u>
+                <t style="color:gray">Delft, Netherlands, July 2023</t>
+                <div class="container_u">
+                  <div class="column_u">
+                    <div>
+                      <u style="color: var(--light-gray); text-decoration-color: var(--light-gray);">
+                        <a target="_blank" href="https://hal.science/hal-04155139/document/">
+                          <i class="fa-solid fa-file-pdf"  style="margin-right: 5px;"></i>Link to paper
+                        </a>
+                      </u>
+                    </div>
+                  </div>
+                  <div class="column_u">
+                    <div>
+                      <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10190700">
+                        <span style="display: inline-flex; align-items: center;">
+                          <img src="assets/my/ieee.svg" height="30" style="margin-right: 5px;"></img> 
+                          <u style="color: var(--light-gray); text-decoration-color: var(--light-gray);">
+                            <span style="color: var(--light-gray); font-weight: var(--fw-300); line-height: 1.6;">
+                              Link to paper
+                            </span>
+                          </u>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </p>
             </li>
+
 
         </section>
 
@@ -235,7 +296,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5"><i class="fa-solid fa-spinner fa-spin-pulse"></i> writing <i class="fa-solid fa-spinner fa-spin-pulse"></i></h5>
+                <h5 class="h5" id="progress_value"></h5>
               </div>
 
               <div class="skill-progress-bg">
@@ -260,7 +321,8 @@
           var percentage = (daysPassed / totalDays) * 100;
         
           // Update the width of the skill-progress-fill element
-          document.getElementById('skill-progress-fill').style.width = percentage + '%';
+          document.getElementById('skill-progress-fill').style.width = percentage + '%'; //<i class="fa-solid fa-spinner fa-spin-pulse"></i>
+          document.getElementById('progress_value').innerHTML = "<i class=\"fa-solid fa-spinner fa-spin-pulse\"></i> Writing " + Math.round(percentage) + "% <i class=\"fa-solid fa-spinner fa-spin-pulse\"></i>";
         </script>
         
         <p><br><br></p>

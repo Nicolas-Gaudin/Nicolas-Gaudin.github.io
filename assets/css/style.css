@@ -160,6 +160,15 @@ body { background: var(--smoky-black); }
 
 
 
+.container_u {
+  display: flex;
+}
+
+.column_u {
+  flex: 1;
+  padding: 20px;
+}
+
 
 
 /*-----------------------------------*\
@@ -1885,5 +1894,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+
 
 }
