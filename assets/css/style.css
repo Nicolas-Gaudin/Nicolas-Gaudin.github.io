@@ -304,8 +304,6 @@ article.active {
 
 
 
-
-
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -839,6 +837,17 @@ main {
   box-shadow: 0 0 0 4px var(--jet);
 }
 
+.timeline-item.clickable {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  background-color: #222222; /* Background color */
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+
+}
+
 .timeline-text {
   color: var(--light-gray);
   font-weight: var(--fw-300);
@@ -1266,6 +1275,23 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-img,
   .blog-banner-box { height: auto; }
 
+  .custom-container {
+    display: block;
+    padding: 0;
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+  .custom-container:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+  .custom-container li{
+    list-style: none; /* hides the bullet */
+    width: 50%;
+    float: left;
+  }
+
 }
 
 
@@ -1555,6 +1581,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .form-btn ion-icon { font-size: 18px; }
 
+
 }
 
 
@@ -1655,6 +1682,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-left: auto;
   }
   
+  .custom-container li{
+    list-style: none; /* hides the bullet */
+    width: 33%;
+    float: left;
+  }
+  
 }
 
 
@@ -1734,6 +1767,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   .navbar-link { font-weight: var(--fw-500); }
 
 
+
+  .custom-container li{
+    list-style: none; /* hides the bullet */
+    width: 25%;
+    float: left;
+  }
+  
 
   /**
    * ABOUT
