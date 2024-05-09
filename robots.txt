@@ -2,4 +2,4 @@ robots.txt
 
 User-agent: *
 Disallow: 
-Sitemap: https://Nicolas-Gaudin.github.io/sitemap.xml
+Sitemap: https://nicolas-gaudin.github.io/sitemap.xml
