@@ -318,39 +318,48 @@
             <h3 class="h3">PhD thesis</h3>
           </div>
 
-          <ul class="skills-list content-card">
-            <li class="skills-item">
+          <ol class="timeline-list">
 
-              <div class="title-wrapper">
-                <h5 class="h5" id="progress_value"></h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill"  id="skill-progress-fill"></div>
-              </div>
-
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Partitionnement dynamique à grain fin contre des attaques par canaux auxiliaires en cache</h4>
+              <span></span>
+              <p class="timeline-text">
+                Nicolas Gaudin
+                <br>
+                <t style="color:gray">Lorient, France, December 2024</t> 
+                <!-- <div class="container_u">
+                  <div class="column_u">
+                    <div>
+                      <u style="color: var(--light-gray); text-decoration-color: var(--light-gray);">
+                        <a target="_blank" href="https://hal.science/hal-04619896v1">
+                          <i class="fa-solid fa-file-pdf"  style="margin-right: 5px;"></i>Link to paper
+                        </a>
+                      </u>
+                    </div>
+                  </div>
+                  <div class="column_u">
+                    <div>
+                      <a target="_blank" href="">
+                        <span style="display: inline-flex; align-items: center;">
+                          <img src="assets/my/ieee.svg" height="30" style="margin-right: 5px;"></img> 
+                          <u style="color: var(--light-gray); text-decoration-color: var(--light-gray);">
+                            <span style="color: var(--light-gray); font-weight: var(--fw-300); line-height: 1.6;">
+                              Link to paper (coming soon)
+                            </span>
+                          </u>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>                 -->
+              </p>
             </li>
-          </ul>
-        </section>
 
-        <script>
-          // Define the start and end dates
-          var startDate = new Date('2024-05-01');
-          var endDate = new Date('2024-10-15');
-        
-          // Get today's date
-          var today = new Date();
-        
-          // Calculate the percentage completion
-          var totalDays = Math.ceil(endDate - startDate);
-          var daysPassed = Math.ceil(today - startDate);
-          var percentage = (daysPassed / totalDays) * 100;
-        
-          // Update the width of the skill-progress-fill element
-          document.getElementById('skill-progress-fill').style.width = percentage + '%'; //<i class="fa-solid fa-spinner fa-spin-pulse"></i>
-          document.getElementById('progress_value').innerHTML = "<i class=\"fa-solid fa-spinner fa-spin-pulse\"></i> Writing " + Math.round(percentage) + "% <i class=\"fa-solid fa-spinner fa-spin-pulse\"></i>";
-        </script>
-        
+          </ol>
+
+
+
+          
         <p><br><br></p>
 
         <section class="timeline">
